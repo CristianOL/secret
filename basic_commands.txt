@@ -1,0 +1,15 @@
+
+Ver images:
+docker images
+
+Ver containers:
+docker ps
+
+Construir image desde dockerfile:
+docker build --pull --rm -f "dockerfile" "."
+
+Construir container desde image:
+docker run --name dockerfile -ti dockerfile /bin/bash
+
+Borrar container:
+docker rm dockerfile
